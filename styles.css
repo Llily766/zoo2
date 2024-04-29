@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/image/Lesanimaux.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  .navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden; /* Ensure contents don't overflow */
+  }
+  
+  .navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Display links as block elements */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 14px 20px; /* Padding around text */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+  }
+  
+  /* Style the active/current link */
+  .navbar a.active {
+    background-color: #509452;
+    color: white;
+  }
+  
+  .carousel {
+    width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .carousel ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .carousel li {
+    width: 300px;
+    flex: 0 0 auto;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+
+  .prev {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
